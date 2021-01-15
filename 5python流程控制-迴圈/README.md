@@ -12,14 +12,158 @@
 所謂確定執行次數，就是很明確的知道要執行幾次程式區塊
 ### 使用for_in迴圈和range()函式
 
-語法:
+#### range()函式語法: 
 
-### 使用while()迴圈
+`range(start, stop[, step])`
 
-語法
+#### range()使用語明:
+
+1. range(5) -> 代表0, 1, 2, 3, 4
+2. range(1,5) -> 代表1, 2, 3, 4
+3. range(1,10,2) -> 代表1, 3, 5, 7, 9
+
+#### for_in 語法: for 變數 in range()
+
+- 變數的名稱可以自已隨便定義
+
+```python
+#執行5次,i的值依序為0,1,2,3,4
+for i in range(5):
+    print(i)
+
+輸出:
+0
+1
+2
+3
+4
+```
+
+```python
+#執行4次,i的值依序為1,2,3,4
+for j in range(1,5):
+    print(j)
+    
+輸出:
+1
+2
+3
+4
+```
+
+```python
+#執行5次,i的值依序為1,3,5,7,9
+for j in range(1,10,2):
+    print(j)
+
+輸出:
+1
+3
+5
+7
+9
+```
+
+### while()迴圈，執行固定次數的語法
+
+語法:如下圖:
+
+![](./images/pic1.png)
+
+說明:
+
+	- 3個步驟，1個都不可以少
+	- 第1步驟:先初始化一個變數i
+	- 第2步驟:在while後面建立Bool值，如果是True，執行程式區塊，如果是False，跳出程式區塊
+	- 第3步驟: 改變i的數值
+	
+	
+```python
+i = 0
+while(i<5):
+    print(i)
+    i += 1
+
+輸出:
+0
+1
+2
+3
+4
+```
+
+```python
+s = 5
+while(s > 0):
+    print(s)
+    s -= 1
+
+輸出:
+5
+4
+3
+2
+1
+```
+
+### 範例:固定執行次數的迴圈
+輸出九九乘法表
+
+```python
+for i in range(1,10):
+    for j in range(1, 10):
+        print('%-2d * %2d = %2d' % (i, j, i*j), end='  ')
+    print()
+```
+
+![](./images/pic2.png)
+
+#### 範例說明:
+i = 1 時  j=1-9
+
+i = 2 時  j=1-9
+
+...
+
+字串格式化的2d,代表空間佔2字元位置大小
+
+字串格式他的-2d,代表空間佔2字元位置大小,文字靠左
+	
 
 ## 不確定執行次數的迴圈
-所謂不確定執行次數，就是很不知道要執行幾次程式區塊，只有在相關的條件符合時，才會跳出迴圈，設計這種迴圈是必需注意的是不要造成`無限迴圈`
+所謂不確定執行次數，就是不知道要執行幾次程式區塊，只有在相關的條件符合時，才會跳出迴圈，設計這種迴圈是必需注意的是不要造成`無限迴圈`
+
+### 語法:如下圖
+
+![](./images/pic3.png)
+
+```python
+name = ''
+while name != '0':
+    name = input('請輸入姓名:[輸入0,停止輸入]')
+    print("Hello! %s" % name)
+    
+輸出:
+Hello! robert
+Hello! jenny
+Hello! Alice
+Hello! 0
+```
+
+### 使用break,強制跳出迴圈
+
+```python
+while True:
+    name = input('請輸入姓名:[輸入0,停止輸入]')
+    if name == '0':
+        break
+    print("Hello! %s" % name)
+
+輸出:
+Hello! robert
+Hello! jenny
+Hello! alice
+```
 
 ## 實際案例
 
