@@ -165,5 +165,66 @@ Hello! jenny
 Hello! alice
 ```
 
-## 實際案例
+## 實際案例 - BMI的計算並輸出狀態，持續運算，直到使用者停止計算
+
+```
+BMI值計算公式:    
+BMI = 體重(公斤) / 身高(公尺)平方
+```
+
+| BMI | 狀態 |
+|:--|:--|
+| <18.5 | 體重過輕 |
+|  18.5 <= BMI < 24 | 非常標準 |
+|  24 <= BMI < 27 | 過重 |
+|  27 <= BMI < 30 | 輕度肥胖 |
+|  30 <= BMI < 35 | 中度肥胖 |
+|  BMI <= 35 | 重度肥胖 |
+
+
+```python
+
+while True:
+    height = float(input('請輸入您的身高(cm)'))
+    weight = float(input('請輸入您的體重(kg)'))
+    bmi = weight / (height/100) ** 2
+    print("身高是 %.2f公分" % (height))
+    print("體重是 %.2f公斤" % (weight))
+
+
+    if bmi < 18.5:
+        state = "體重過輕"
+    elif bmi < 24:
+        state = "非常標準"
+    elif bmi < 27:
+        state = "過重"
+    elif bmi < 30:
+        state = "輕度肥胖"
+    elif bmi < 35:
+        state = "中度肥胖"
+    else:
+        state = "過重"
+
+    print("您的bmi是{:d},狀態:{:s}".format(int(bmi),state))
+    answer = input("請問還要繼續運算BMI嗎?[繼續請按'Y',停止請按任意鍵]")
+    if answer.upper() != 'Y':       
+        break
+    print("-----------------------")
+print("程式結束")    
+
+輸出:
+身高是 178.00公分
+體重是 67.00公斤
+您的bmi是21,狀態:非常標準
+-----------------------
+身高是 160.00公分
+體重是 45.00公斤
+您的bmi是17,狀態:體重過輕
+-----------------------
+身高是 172.00公分
+體重是 85.00公斤
+您的bmi是28,狀態:輕度肥胖
+程式結束
+```
+
 
