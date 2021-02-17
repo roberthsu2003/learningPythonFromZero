@@ -8,3 +8,5 @@
 ### [4.python流程控制-判斷](https://github.com/roberthsu2003/learningPythonFromZero/tree/master/4.python%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%88%A4%E6%96%B7)
 
 ### [5.python流程控制-迴圈](./5python流程控制-迴圈)
+
+### [6.python資料結構](./6python資料結構)
