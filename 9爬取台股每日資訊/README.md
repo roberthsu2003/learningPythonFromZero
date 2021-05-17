@@ -119,6 +119,12 @@ else:
 ![](./images/pic10.png)
 ![](./images/pic11.png)
 
+## [線上檢視執行程式碼](https://colab.research.google.com/drive/17aQk75o9g-N7fhXd6VJPgoY6o3-NcPPb?usp=sharing)
+
+![](./images/pic12.png)
+
+
+
 
 
 
