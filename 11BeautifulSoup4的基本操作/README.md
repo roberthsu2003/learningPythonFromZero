@@ -81,7 +81,7 @@ print(soup.prettify())
 
 ## 開始導覽目前網頁的局部內容
 
-#### 取出title元素內容(以下是title元素的架構)
+#### 1. 取出title元素內容(以下是title元素的架構)
 
 ![](./images/pic05.png)
 
@@ -92,7 +92,7 @@ soup.title
 <title>A Useful Page</title>
 ```
 
-#### 取出title元素標籤名稱
+#### 2. 取出title元素標籤名稱
 
 ```python
 soup.title.name
@@ -101,7 +101,7 @@ soup.title.name
 'title'
 ```
 
-#### 取出title元素內容
+#### 3. 取出title元素內容
 
 ```python
 soup.title.string
@@ -110,7 +110,7 @@ soup.title.string
 'A Useful Page'
 ```
 
-#### 取出title父元素標籤名稱
+#### 4. 取出title父元素標籤名稱
 
 ```python
 soup.title.parent.name
@@ -119,7 +119,7 @@ soup.title.parent.name
 'head'
 ```
 
-#### 取出h1元素(以下是h1元素的架構)
+#### 5. 取出h1元素(以下是h1元素的架構)
 
 ![](./images/pic06.png)
 
@@ -130,7 +130,7 @@ soup.h1
 <h1>An Interesting Title</h1>
 ```
 
-#### 取出第一個p元素(以下是p元素的架構)
+#### 6. 取出第一個p元素(以下是p元素的架構)
 
 ![](./images/pic07.png)
 
@@ -143,7 +143,7 @@ soup.p
 <p class="title"><b>The Dormouse's story</b></p>
 ```
 
-#### 取出第一個p元素，class屬性的屬性值
+#### 7. 取出第一個p元素，class屬性的屬性值
 
 ```python
 soup.p['class']
@@ -152,7 +152,7 @@ soup.p['class']
 ['title']
 ```
 
-#### 取出第一個a元素(以下是a元素的架構)
+#### 8. 取出第一個a元素(以下是a元素的架構)
 
 ![](./images/pic08.png)
 
@@ -165,7 +165,7 @@ soup.a
 </a>
 ```
 
-#### 取出所有的a元素
+#### 9. 取出所有的a元素
 
 ```python
 soup.find_all('a')
@@ -182,7 +182,7 @@ soup.find_all('a')
  </a>]
 ```
 
-#### 取出id屬性為link3的元素
+#### 10. 取出id屬性為link3的元素
 
 ```python
 soup.find(id='link3')
@@ -193,7 +193,7 @@ Tillie
 </a>
 ```
 
-#### 取出<a>標籤所有連結網址
+#### 11. 取出<a>標籤所有連結網址
 
 ```python
 for link in soup.find_all('a'):
