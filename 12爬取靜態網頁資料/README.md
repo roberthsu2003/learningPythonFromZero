@@ -105,7 +105,7 @@ print(rootElement['data-section'])
 
 #### 3_2 取得標題
 
-![](./images/pic7.png)
+![](./images/pic9.PNG)
 
 ```python
 #取得標題內容
