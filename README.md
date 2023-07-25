@@ -23,3 +23,7 @@
 ### [11.BeautifulSoup4的基本操作](./11BeautifulSoup4的基本操作)
 
 ### [12.爬取靜態網頁資料](./12爬取靜態網頁資料)
+
+# python應用
+
+### [13.python list的操控](./13python_list操控)
