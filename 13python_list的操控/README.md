@@ -11,9 +11,9 @@ python的list, 就是一般常說的陣列,list操控是開發者最常使用的
  - #### 建立list
  - #### 新增元素
  - #### 選取元素
+ - #### 讀取所有元素
  - #### 修改元素
  - #### 刪除元素
- - #### 讀取所有元素
  - #### 切割元素
 
 ### 建立list
@@ -61,10 +61,10 @@ cities
 ```
 ![](./images/pic4.png)
 
-#### 選取元素
-取存list元素,所依靠的是索引編號
+### 選取元素
+- 取存list元素,所依靠的是索引編號
 
-```
+```python
 cities = ["台北","台中","高雄"]
 print(cities[0])
 print(cities[1])
@@ -72,6 +72,20 @@ print(cities[2])
 ```
 
 ![](./images/pic5.png)
+
+### 讀取所有元素
+- 利用for_in迴圈讀取所有內容
+
+```python
+weekdays = ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日'] 
+for elem in weekdays:
+  print(elem)
+```
+
+![](./images/pic6.png)
+
+### 修改元素
+
 
 
 
