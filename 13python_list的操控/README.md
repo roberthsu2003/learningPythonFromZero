@@ -143,7 +143,79 @@ print(hello_list[-5:])
 
 ![](./images/pic10.png)
 
-#### 
+### 實際操作(中文姓名產生器)
+#### 結果如下:
+
+![](./images/pic11.png)
+
+#### 第1部份下載200組姓名文字
+
+```
+import requests
+
+url = 'https://raw.githubusercontent.com/roberthsu2003/learningPythonFromZero/master/13python_list%E7%9A%84%E6%93%8D%E6%8E%A7/names.txt'
+response = requests.get(url)
+names_str = ""
+if response.status_code == 200:
+  names_str = response.text
+names_str
+```
+
+![](./images/pic12.png)
+
+#### 第2部份下載姓名文字轉成list
+
+```python
+names = names_str.split()
+names
+```
+
+![](./images/pic13.png)
+
+### 第3部份建立操作界面
+
+```python
+import random
+print("中文姓名產生器:\n")
+
+first_name = input("請輸入您的姓(first_name):")
+num = int(input("請輸入要產生的組數(不可超過20組):"))
+choise_names = random.choices(names,k=num)
+print(f"\n產生以下{num}組中文姓名:")
+for name in choise_names:
+  last_name = name[-2:]
+  random_name = first_name + last_name
+  print(random_name)
+```
+
+![](./images/pic14.png)
+
+### 完整程式碼:
+
+```python
+import requests
+import random
+
+url = 'https://raw.githubusercontent.com/roberthsu2003/learningPythonFromZero/master/13python_list%E7%9A%84%E6%93%8D%E6%8E%A7/names.txt'
+response = requests.get(url)
+names_str = ""
+if response.status_code == 200:
+  names_str = response.text
+names = names_str.split()
+print("中文姓名產生器:\n")
+
+first_name = input("請輸入您的姓(first_name):")
+num = int(input("請輸入要產生的組數(不可超過20組):"))
+choise_names = random.choices(names,k=num)
+print(f"\n產生以下{num}組中文姓名:")
+for name in choise_names:
+  last_name = name[-2:]
+  random_name = first_name + last_name
+  print(random_name)
+
+
+```
+
 
 
 
