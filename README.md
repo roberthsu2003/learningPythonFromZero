@@ -26,4 +26,4 @@
 
 # python應用
 
-### [13.python list的操控](./13python_list操控)
+### [13.python list的操控](./13python_list的操控)
