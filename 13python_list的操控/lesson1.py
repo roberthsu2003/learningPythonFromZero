@@ -4,7 +4,8 @@ with open('ExchangeRate.csv',encoding='utf-8',newline='') as file:
     csvReader = csv.reader(file)
     rates = list(csvReader)
 pp = pprint.PrettyPrinter(
-    indent=1,
-    width=200
+    indent=2,
+    width=300,
+    compact=True
 )
 pp.pprint(rates)

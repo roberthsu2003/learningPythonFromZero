@@ -86,6 +86,67 @@ for elem in weekdays:
 
 ### 修改元素
 
+```python
+weekdays = ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日'] 
+
+weekdays[6] = 'sunday'
+
+Weekdays
+```
+
+![](./images/pic7.png)
+
+### 刪除元素
+
+- pop()->移除最後元素
+- remove()->依元素值移除,沒有此元素,則出錯
+
+#### remove()移除
+
+```python
+cities = ["台北","桃園","台中","台南","高雄"]
+
+if "桃園" in cities:
+  cities.remove("桃園")
+
+cities
+```
+
+![](./images/pic8.png)
+
+#### pop()移除最後一個元素
+
+```
+cities = ["台北","桃園","台中","台南","高雄"]
+
+cities.pop()
+
+cities
+
+```
+
+![](./images/pic9.png)
+
+### 切割元素
+
+```
+hello_str = "HelloWorld"
+hello_list = list(hello_str)
+print(hello_list)
+
+print(hello_list[0:5])
+
+print(hello_list[:5])
+
+print(hello_list[-5:])
+```
+
+![](./images/pic10.png)
+
+#### 
+
+
+
 
 
 
