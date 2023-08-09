@@ -163,6 +163,12 @@ names_str
 
 ![](./images/pic12.png)
 
+- 第1行 載入下載工具requests
+- 第3行 姓名文字的網址
+- 第4行 執行下載動作
+- 第6行 檢查下載是否成功
+- 第7行 取出文字內容,儲存至變數names_str
+
 #### 第2部份下載姓名文字轉成list
 
 ```python
@@ -171,6 +177,8 @@ names
 ```
 
 ![](./images/pic13.png)
+
+- 第1行 使用字串功能的split(),將字串轉換為list,儲存於names
 
 ### 第3部份建立操作界面
 
@@ -189,6 +197,12 @@ for name in choise_names:
 ```
 
 ![](./images/pic14.png)
+
+- 第1行 下載內建的random工具箱
+- 第2行 使用random工具箱內的choices(),取出亂數選取的名字,參數k=num,代表要產生的list元素數量。
+- 第8行 使用for...in將list變數choise_names，一個一個取出裏面的名字
+- 第9行 取出name字串後的2個文字
+- 第10行 組合使用者輸入的姓,加上取出的最後2個文字(名)
 
 ### 完整程式碼:
 
@@ -212,8 +226,6 @@ for name in choise_names:
   last_name = name[-2:]
   random_name = first_name + last_name
   print(random_name)
-
-
 ```
 
 
