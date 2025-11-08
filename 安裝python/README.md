@@ -239,14 +239,11 @@ uv --version
 
 #### 5.3 UV 初始化 - 建立第一個專案
 
-使用 UV 建立新專案：
+使用 UV 初始化現有專案：
 
 ```bash
 # 建立新專案
-uv init my-project
-
-# 進入專案目錄
-cd my-project
+uv init
 
 # 查看專案結構
 dir  # Windows
