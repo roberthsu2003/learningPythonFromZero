@@ -218,7 +218,7 @@ UV 是新一代的 Python 套件管理工具，比傳統的 pip 更快速且功�
 開啟 PowerShell（以系統管理員身份執行），輸入：
 
 ```powershell
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
 **或使用 pip 安裝（方法二）：**
