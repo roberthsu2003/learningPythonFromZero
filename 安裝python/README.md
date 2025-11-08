@@ -243,7 +243,9 @@ uv --version
 
 ```bash
 # 建立新專案
-uv init
+uv init --python 3.10
+uv venv
+uv sync
 
 # 查看專案結構
 dir  # Windows
@@ -255,8 +257,6 @@ dir  # Windows
 虛擬環境可以為每個專案建立獨立的 Python 環境：
 
 ```bash
-# 建立虛擬環境
-uv venv
 
 # 啟動虛擬環境（Windows）
 .venv\Scripts\activate
