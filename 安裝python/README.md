@@ -265,6 +265,11 @@ dir  # Windows
 # source .venv/bin/activate
 ```
 
+```bash
+# 退出虛擬環境
+deactivate
+```
+
 #### 5.5 使用 UV 安裝套件
 
 安裝 Python 套件範例：
